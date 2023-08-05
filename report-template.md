@@ -4,28 +4,34 @@
 
 In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+* The purpose of this analysis is to identify the credit-worthiness of borrowers.
+* The data used was historical lending data that included loan size, interest rate, borrower income, debt to income ratio, the number of accounts, any derogatory amrks, total debt and    
+the loan status.
+* The purpose of the model is to predict either a healthy loan status or a high risk loan status for future borrowers.
+* After pulling in the dataset and creating the labels set from the features, the data was then split into training and testing datasets.The model was then instantiated and fit using the training data. Predictions were then made on the testing data so an evaluation could be performed to determine the model's accuracy.
+* LogisticRegression was used to fit the data and make predictions. Then the balanced_accuracy_score, confusion_matrix and classification_report were all used in this process.
 
 ## Results
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+  * The balanced accuracy is a 94%
+  * Healthy loan Precision is 100% while Recall is 100%
+  * High-risk loan Precision is 87% while Recall is 89%
 
 
 
 * Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+  * Balanced accuracy is a  99%
+  * Healthy loans stay at a 100% for Precision and Recall 
+  * High-risk loans stay at a Precision of 87% and Recall moves up to 100% 
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
 
-If you do not recommend any of the models, please justify your reasoning.
+* Model 2 seems to be the better model because of the higher accuracy.
+* Both models need more improvment before they can become feasible. Would not recommend yet. 
+
+
+
